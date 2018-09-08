@@ -3,7 +3,11 @@
 ## Template file for problem 1. 						##
 ## First, fill in your answer logic below					##
 ##################################################################################
-#                                LOGIC GOES BELOW                     		#
+#                                LOGIC GOES BELOW
+# For finding the expected the value of sum of rolls:
+# We will roll till we're getting the larger values.
+# Probability of getting any number on dice is 1/6.
+# The Expected Value can be calculated as (Number*Probability of getting that number)
 ##################################################################################
 #
 #
@@ -37,7 +41,9 @@ def findSumDieRoll(n):
 	##          FILL ME IN          ##
 	##################################
 	# n is a float
-	sumRolls = n/2 # Replace me with your answer
+	prob=1/6
+	
+	sumRolls = sumRolls+sumRolls*(prob) # Replace me with your answer
 
 	return round(sumRolls, 2)
 
